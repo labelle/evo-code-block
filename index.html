@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Inline Code Block</title>
+    <title>Multiline Code Block</title>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <link rel="stylesheet" href="style.css">
   </head>
@@ -12,8 +12,8 @@
 
     <h1 class="evo-codeblock-label">Code Block Example</h1>
 
-    <!-- Start Example-->
-    <div class="evo-codeblock-multiline-list">
+    <!-- Start Example.  Place data-identifier first. -->
+    <div data-identifier="list" class="evo-codeblock">
       <ul>
         <li>First item</li>
         <li>Second clear</li>
@@ -23,31 +23,15 @@
     </div>
     <!-- End Example-->
 
-    <div class="evo-codeblock-multiline evo-codeblock-multiline-list-taget">
-  
+    <!--  This class will have the identifier in it from the thml that is to be placed here.  The identifier is placed inside the class to avoid conflicts with styles. -->
+    <div class="evo-codeblock-list-target">
+      <pre>
         <!-- code gets put in here -->
-     
+      </pre>
     </div>
 
   </body>
 
   <script src="./codeblock.js"></script>
 
-<!--   <script>
-    $(document).on('click','.evo-show-codeblock-button', function() {
-
-      $("body").contents().filter(function() {
-        return this.nodeType == 8;
-      }).each(function(i, e){
-
-        var string = e.nodeValue.valueOf().toString();
-
-        if ( string == ' Start ' ) {
-          $(this).before("<span id='test-1'>");
-          var text = document.getElementsByClassName('marked');
-          alert(text);
-        }
-      });
-    });
-  </script> -->
 </html>
