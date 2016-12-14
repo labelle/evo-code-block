@@ -18,6 +18,10 @@ Block that will show multiple lines of code. It looks for an identifier and then
 
 * Add the reference to the javascript file and set it's pathway.
 
+* **Important** note on formatting
+
+    Because we are grabbing html right from the file the code being shown does need some formatting considerations.  Specifically, **if the code is indented in the file then the indentation will be applied when showing in the box as well**.  In order to have the code tight to the left side of the codeblock the code itself will need to remain unindented in the file.
+
 ####Example
 
 The main focus is on the identifier/target pairing.  The identifier marks the section and then that code will get placed in the matching target.
