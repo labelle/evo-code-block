@@ -1,0 +1,1 @@
+$(document).ready(function(){var e=document.getElementsByClassName("evo-codeblock");e.length>0&&Array.prototype.forEach.call(e,function(){var t=e[0].attributes[0].nodeValue,o=$("[data-identifier="+t+"]").html();$(".evo-codeblock-"+t+"-target pre code").text(o)})});
