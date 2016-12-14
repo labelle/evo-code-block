@@ -4,13 +4,13 @@ $(document).ready(function() {
     // Checks for blocks
     if (codeBlocks.length > 0 ) {
         // Loops through each block
-        Array.prototype.forEach.call(codeBlocks, function() {
+        $('.evo-codeblock').each(function() {
             // Grabs the identifier based on being first in order.
-            var identifier = codeBlocks[0].attributes[0].nodeValue;
+            var identifier = $(this).attr('data-identifier');
             // Get the html for the div with matching identifier
-            var html = $( '[data-identifier=' + identifier + ']').html();
+            var html = $('[data-identifier=' + identifier + ']').html();
             // Fills the html in the target.
-            $('.evo-codeblock-' + identifier + '-target pre code').text(html);
+            $('[data-target=' + identifier + '] pre code').text(html);
         });
     }
 });

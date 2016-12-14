@@ -12,26 +12,25 @@
 
     <h1 class="evo-codeblock-label">Code Block Example</h1>
 
-    <!-- Start Example.  Place data-identifier first. -->
-    <div data-identifier="list" class="evo-codeblock">
+    <div class="evo-codeblock" data-identifier="list">
+      <!-- Start Example.  -->
       <ul>
         <li>First item</li>
         <li>Second clear</li>
         <li>Third item</li>
         <li>Fourth item</li>
       </ul>
+      <!-- End Example -->
     </div>
-    <!-- End Example-->
 
-    <!--  This class will have the identifier in it from the thml that is to be placed here.  The identifier is placed inside the class to avoid conflicts with styles. -->
-    <div class="evo-codeblock-list evo-codeblock-list-target">
+    <!--  The data target needs to match the html section it is supposed to be showing. -->
+    <div class="evo-codeblock-list evo-codeblock-target" data-target="list">
       <pre>
         <code>
           <!-- code gets put in here -->
         </code>
       </pre>
     </div>
-
   </body>
 
   <script src="./codeblock.js"></script>

@@ -12,7 +12,7 @@ Block that will show multiple lines of code. It looks for an identifier and then
 
 ## Setup 
 
-* Wrap the HTML you want to show with a div tag that has the class "evo-codeblock".  That div will need an identifier which will be called "data-identifier".  The identifier is how it will link to the target box that shows it.  The codeblock displaying the HTML will have the identifier in it's class. Place the data-identifier first in the order of attributes inside the div.  See example below.
+* Wrap the HTML you want to show with a div tag that has the class "evo-codeblock".  That div will need an identifier which will be called "data-identifier".  The identifier is how it will link to the target box that shows it.  The codeblock displaying the HTML will have an attribute "data-target" that must match the identifier of the section you want to show in the block. See example below.
 
 * Add the reference to the stylesheet and set it's pathway.
 
@@ -20,10 +20,17 @@ Block that will show multiple lines of code. It looks for an identifier and then
 
 ####Example
 
-In the example below the identifier is set to "list".  The div is placed around the HTML you want to display.  Everything within that div will then be displayed in the codeblock. 
+The main focus is on the identifier/target pairing.  The identifier marks the section and then that code will get placed in the matching target.
+
+````shell
+data-identifier="list"
+data-target="list"
+````
+
+In the example below the identifier is set to "list".  The div is placed around the HTML you want to display.  Everything within that div will then be displayed in the target codeblock. 
 ````shell
 <!-- Start Example -->
-<div data-identifier="list" class="evo-codeblock"><!-- the identifier is set there -->
+<div class="evo-codeblock" data-identifier="list"><!-- the identifier is set there -->
   <ul>
     <li>First item</li>
     <li>Second clear</li>
@@ -33,11 +40,11 @@ In the example below the identifier is set to "list".  The div is placed around 
 </div>
 <!-- End Example -->
 ````
-Then the codeblock that will show this HTML.  A div with a pre tag inside to format the html.
+Then the codeblock with a data-target to match the identifier will show the HTML.  A div with a pre tag and then code tage inside to format the html.
 
 ````shell
 <!-- the identifier is matched by the class in the codeblock's target.  The position needs to stay the same.  After codeblock, before target -->
-<div class="evo-codeblock-list-target">
+<div class="evo-codeblock-target" data-target="list">
     <pre>
         <code>
             <!-- HTML will show up inside here -->  
