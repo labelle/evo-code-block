@@ -12,7 +12,7 @@ Block that will show multiple lines of code. It looks for an identifier and then
 
 ## Setup 
 
-* Wrap the HTML you want to show with a div tag that has the class "evo-codeblock".  That div will need an identifier which will be called "data-identifier".  The identifier is how it will link to the box that shows it.  The codeblock displaying the HTML will have the identifier in it's class. Place the data-identifier first in the order of attributes inside the div.  See example below.
+* Wrap the HTML you want to show with a div tag that has the class "evo-codeblock".  That div will need an identifier which will be called "data-identifier".  The identifier is how it will link to the target box that shows it.  The codeblock displaying the HTML will have the identifier in it's class. Place the data-identifier first in the order of attributes inside the div.  See example below.
 
 * Add the reference to the stylesheet and set it's pathway.
 
@@ -39,7 +39,9 @@ Then the codeblock that will show this HTML.  A div with a pre tag inside to for
 <!-- the identifier is matched by the class in the codeblock's target.  The position needs to stay the same.  After codeblock, before target -->
 <div class="evo-codeblock-list-target">
     <pre>
-        <!-- HTML will show up inside here -->  
+        <code>
+            <!-- HTML will show up inside here -->  
+        </code>
     </pre>
 </div>
 ````
@@ -57,3 +59,5 @@ This will produce the screenshot at the end of this readme.
 > Contains the styles used
 
 ## Screenshot
+
+![inline codeblock](./img/multilinecodeblock.png "inline codeblock")
