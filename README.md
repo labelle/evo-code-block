@@ -52,7 +52,33 @@ Then the codeblock with a data-target to match the identifier will show the HTML
     </pre>
 </div>
 ````
-This will produce the screenshot at the end of this readme.
+
+#### Code tag classes
+This code tag can have all the same classes as the inline block.
+
+>No class on the code tag fullscreen
+
+![inline codeblock](./img/multilinecodeblock.png "inline codeblock")
+
+>No class on the code tag small screen
+
+![inline codeblock](./img/smallscreenmultiline.png "inline codeblock")
+
+
+>class="nowrap" on the code tag removes text wrapping causing the box to scroll if needed.
+
+
+>class="short" on the code tag
+
+![inline codeblock](./img/shortclassonmultiline.png "inline codeblock")
+
+>class="darktheme" on the code tag
+
+![inline codeblock](./img/multilinedarktheme.png "inline codeblock")
+
+>class="darktheme short" on the code tag
+
+![inline codeblock](./img/darkthemeshortmultiline.png "inline codeblock")
 
 ## Structure
 
