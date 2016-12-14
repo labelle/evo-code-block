@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Inline Code Block</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <h1 class="evo-codeblock-label">Code Block Example</h1>
+
+    <!-- Start Example-->
+    <div class="evo-codeblock-multiline-list">
+      <ul>
+        <li>First item</li>
+        <li>Second clear</li>
+        <li>Third item</li>
+        <li>Fourth item</li>
+      </ul>
+    </div>
+    <!-- End Example-->
+
+    <div class="evo-codeblock-multiline-list-taget">
+      <!-- code gets put in here -->
+    </div>
+
+  </body>
+
+  <script src="./codeblock.js"></script>
+
+<!--   <script>
+    $(document).on('click','.evo-show-codeblock-button', function() {
+
+      $("body").contents().filter(function() {
+        return this.nodeType == 8;
+      }).each(function(i, e){
+
+        var string = e.nodeValue.valueOf().toString();
+
+        if ( string == ' Start ' ) {
+          $(this).before("<span id='test-1'>");
+          var text = document.getElementsByClassName('marked');
+          alert(text);
+        }
+      });
+    });
+  </script> -->
+</html>
