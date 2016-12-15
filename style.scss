@@ -38,4 +38,17 @@
     max-height: 465px;
     overflow: scroll;
   }
+  code.hidden-block {
+    display:none !important;
+  }
+}
+.example-button {
+  text-transform: uppercase;
+  line-height: 0;
+  display: inline-block;
+  font-size: .84rem;
+  border: 1px solid;
+  padding: 1.065rem .925rem .975rem .9em;
+  background-color:#fff;
+  cursor:pointer;
 }

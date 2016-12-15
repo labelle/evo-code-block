@@ -10,26 +10,103 @@
 
   <body>
 
-    <h1 class="evo-codeblock-label">Code Block Example</h1>
+    <h1 class="evo-codeblock-label">Code Block Examples</h1>
+      <div style="padding: 25px 100px;">
 
-    <div class="evo-codeblock" data-identifier="list">
-<!-- Start Example  -->
+        <h2>Example 1 - Code block with multi line block underneath</h2>
+        <div class="evo-codeblock" data-identifier="list">
+<!-- Start Example  1 -->
 <ul>
   <li>First item</li>
   <li>Second clear</li>
   <li>Third item</li>
   <li>Fourth item</li>
 </ul>
-<!-- End Example -->
-    </div>
+<!-- End Example 1 -->
+        </div>
 
-    <!--  The data target needs to match the html section it is supposed to be showing. -->
-    <div class="evo-codeblock-list evo-codeblock-target" data-target="list">
-      <pre>
-        <code>
-          <!-- code gets put in here -->
-        </code>
-      </pre>
+        <!--  The data target needs to match the html section it is supposed to be showing. -->
+        <div class="evo-codeblock-list evo-codeblock-target" data-target="list">
+          <pre>
+            <code>
+              <!-- code gets put in here -->
+            </code>
+          </pre>
+        </div>
+
+        <h2>Example 2 - Code block with multi line block underneath that has a fixed height on the block</h2>
+        <div class="evo-codeblock" data-identifier="list2">
+<!-- Start Example  2 -->
+<ul>
+  <li>First item</li>
+  <li>Second clear</li>
+  <li>Third item</li>
+  <li>Fourth item</li>
+  <li>First item</li>
+  <li>Second clear</li>
+  <li>Third item</li>
+  <li>Fourth item</li>
+  <li>First item</li>
+  <li>Second clear</li>
+  <li>Third item</li>
+  <li>Fourth item</li>
+  <li>First item</li>
+  <li>Second clear</li>
+  <li>Third item</li>
+  <li>Fourth item</li>
+  <li>First item</li>
+  <li>Second clear</li>
+  <li>Third item</li>
+  <li>Fourth item</li>
+  <li>First item</li>
+  <li>Second clear</li>
+  <li>Third item</li>
+  <li>Fourth item</li>
+  <li>First item</li>
+  <li>Second clear</li>
+  <li>Third item</li>
+  <li>Fourth item</li>
+  <li>First item</li>
+  <li>Second clear</li>
+  <li>Third item</li>
+  <li>Fourth item</li>
+</ul>
+<!-- End Example 2 -->
+      </div>
+
+      <!--  The data target needs to match the html section it is supposed to be showing. -->
+      <div class="evo-codeblock-list evo-codeblock-target" data-target="list2">
+        <pre>
+          <code class="fixheight">
+            <!-- code gets put in here -->
+          </code>
+        </pre>
+      </div>
+
+      <h2>Example 3 - Code block with multi line block underneath that is hidden and revealed on button click</h2>
+      <div class="evo-codeblock" data-identifier="list3">
+<!-- Start Example  3 -->
+<ul>
+  <li>First item - Reveal box</li>
+  <li>Second clear - Reveal box</li>
+  <li>Third item - Reveal box</li>
+  <li>Fourth item - Reveal box</li>
+</ul>
+<!-- End Example  3 -->
+      </div>
+
+      <div>
+        <button class="example-button evo-multiline-reveal-button">view code</button>
+        <!--  The data target needs to match the html section it is supposed to be showing. -->
+        <div class="evo-codeblock-list evo-codeblock-target" data-target="list3">
+          <pre>
+            <code class="hidden-block">
+              <!-- code gets put in here -->
+            </code>
+          </pre>
+        </div>
+      </div>
+
     </div>
   </body>
 

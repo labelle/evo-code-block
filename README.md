@@ -20,10 +20,11 @@ Block that will show multiple lines of code. It looks for an identifier and then
 
 * **Important** note on formatting
 
-    Because we are grabbing html right from the file the code being shown does need some formatting considerations.  Specifically, **if the code is indented in the file then the indentation will be applied when showing in the box as well**.  In order to have the code tight to the left side of the codeblock the code itself will need to remain unindented in the file.
+    Because we are grabbing html right from the file, the code being shown does need some formatting considerations.  Specifically, **if the code is indented in the file then the indentation will be applied when showing in the box as well**.  In order to have the code tight to the left side of the codeblock the code itself will need to start out unindented in the file.
 
-####Example
+####Examples
 
+######Setting up the identifier / target pairing to display code in the code box.
 The main focus is on the identifier/target pairing.  The identifier marks the section and then that code will get placed in the matching target.
 
 ````shell
@@ -57,7 +58,26 @@ Then the codeblock with a data-target to match the identifier will show the HTML
 </div>
 ````
 
-#### Code tag classes
+######Setting up the button to reveal / hide the code block.
+
+The button needs to be inside the same div as the block it will be revealing.  It looks for the class of "hidden-block".  The block itself is set up like every other block.  The code tag just needs the class "hidden-block" to be hidden.  The button needs a class of "evo-multiline-reveal-button" in order to trigger the reveal /hide behavior.
+
+````shell
+<div>
+    <button class="example-button evo-multiline-reveal-button">view code</button>
+    <!--  The data target needs to match the html section it is supposed to be showing. -->
+    <div class="evo-codeblock-list evo-codeblock-target" data-target="list3">
+      <pre>
+        <code class="hidden-block">
+          <!-- code gets put in here -->
+        </code>
+      </pre>
+    </div>
+</div>
+````
+
+
+## Code tag classes
 This code tag can have all the same classes as the inline block.
 
 >No class on the code tag fullscreen
@@ -83,6 +103,12 @@ This code tag can have all the same classes as the inline block.
 >class="darktheme short" on the code tag
 
 ![inline codeblock](./img/darkthemeshortmultiline.png "inline codeblock")
+
+######Extra classes for the multiline code block
+
+>class="fixheight" on the code tag sets a max-height of 465px.  The box will then scroll.
+
+>class="hidden-block" on the code tag hides the block.  This class will be toggles with a class called revealed when showing / hiding the box.
 
 ## Structure
 

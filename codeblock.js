@@ -13,4 +13,19 @@ $(document).ready(function() {
             $('[data-target=' + identifier + '] pre code').text(html);
         });
     }
+
+    // Hides or reveals the code block 
+    $('.evo-multiline-reveal-button').on('click', function() {
+        // This gets the hidden code block in the same div as the button
+        var block = $(this).parents('div').find('.hidden-block');
+        // This toggles between hidding and showing the box.
+        if( block.hasClass('hidden-block') )  {
+            // Show the box
+            $(this).parents('div').find('.hidden-block').removeClass('hidden-block').addClass('revealed');
+        } else {
+            // hide the box
+            $(this).parents('div').find('.revealed').removeClass('revealed').addClass('hidden-block');
+        }
+    });
+
 });
