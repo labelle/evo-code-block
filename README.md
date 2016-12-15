@@ -60,7 +60,7 @@ Then the codeblock with a data-target to match the identifier will show the HTML
 
 ######Setting up the button to reveal / hide the code block.
 
-The button needs to be inside the same div as the block it will be revealing.  It looks for the class of "hidden-block".  The block itself is set up like every other block.  The code tag just needs the class "hidden-block" to be hidden.  The button needs a class of "evo-multiline-reveal-button" in order to trigger the reveal /hide behavior.
+The button needs to be inside the same div as the block it will be revealing.  The HTML structure to this is very important. It looks for the class of "hidden-block".  The block itself is set up like every other block.  The code tag just needs the class "hidden-block" to be hidden.  The button needs a class of "evo-multiline-reveal-button" in order to trigger the reveal /hide behavior.
 
 ````shell
 <!--  The data target needs to match the html section it is supposed to be showing. -->
