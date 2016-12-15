@@ -63,16 +63,14 @@ Then the codeblock with a data-target to match the identifier will show the HTML
 The button needs to be inside the same div as the block it will be revealing.  It looks for the class of "hidden-block".  The block itself is set up like every other block.  The code tag just needs the class "hidden-block" to be hidden.  The button needs a class of "evo-multiline-reveal-button" in order to trigger the reveal /hide behavior.
 
 ````shell
-<div>
-    <button class="example-button evo-multiline-reveal-button">view code</button>
-    <!--  The data target needs to match the html section it is supposed to be showing. -->
-    <div class="evo-codeblock-list evo-codeblock-target" data-target="list3">
-      <pre>
-        <code class="hidden-block">
-          <!-- code gets put in here -->
-        </code>
-      </pre>
-    </div>
+<!--  The data target needs to match the html section it is supposed to be showing. -->
+<div class="evo-codeblock-list evo-codeblock-target" data-target="list3">
+  <button class="example-button evo-multiline-reveal-button">view code</button>
+  <pre>
+    <code class="hidden-block">
+      <!-- code gets put in here -->
+    </code>
+  </pre>
 </div>
 ````
 
