@@ -20,10 +20,10 @@ $(document).ready(function() {
         var block = $(this).parent('div').find('.hidden-block');
         // This toggles between hidding and showing the box.
         if( block.hasClass('hidden-block') )  {
-            // Show the box
+            // Show the box.
             $(this).parent('div').find('.hidden-block').removeClass('hidden-block').addClass('revealed');
         } else {
-            // hide the box
+            // Hide the box.
             $(this).parent('div').find('.revealed').removeClass('revealed').addClass('hidden-block');
         }
     });
