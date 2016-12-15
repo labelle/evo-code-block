@@ -110,6 +110,7 @@ This code tag can have all the same classes as the inline block.
 
 >class="hidden-block" on the code tag hides the block.  This class will be toggles with a class called revealed when showing / hiding the box.
 
+>class="evo-multiline-reveal-button" is the class the button in charge of showing/hiding the codeblock needs.
 ## Structure
 
 #### Index.html
