@@ -22,9 +22,14 @@ $(document).ready(function() {
         if( block.hasClass('hidden-block') )  {
             // Show the box.
             $(this).parent('div').find('.hidden-block').removeClass('hidden-block').addClass('revealed');
+            $(this).text('Hide code');
+            if( $(this).hasClass('evo-remove-this')) {
+                $(this).remove();
+            }
         } else {
             // Hide the box.
             $(this).parent('div').find('.revealed').removeClass('revealed').addClass('hidden-block');
+            $(this).text('View code');
         }
     });
 

@@ -105,10 +105,25 @@ This code tag can have all the same classes as the inline block.
 ######Extra classes for the multiline code block
 
 >class="fixheight" on the code tag sets a max-height of 465px.  The box will then scroll.
-
+````shell
+<code class="fixheight">
+  <!-- code gets put in here -->
+</code>
+````
 >class="hidden-block" on the code tag hides the block.  This class will be toggles with a class called revealed when showing / hiding the box.
-
+````shell
+<code class="hidden-block" data-target="list2">
+  <!-- code gets put in here -->
+</code>
+````
 >class="evo-multiline-reveal-button" is the class the button in charge of showing/hiding the codeblock needs.
+````shell
+<button class="example-button evo-multiline-reveal-button">view code</button>
+````
+>class="evo-remove-this" is the class that, when added to the code reveal button, will cause the button to be removed from the page.  A page refresh is required in order to bring it back. 
+````shell
+<button class="example-button evo-multiline-reveal-button evo-remove-this">view code</button>
+````
 ## Structure
 
 #### Index.html
