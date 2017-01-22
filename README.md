@@ -76,7 +76,7 @@ The button needs to be inside the same div as the block it will be revealing.  T
 
 
 ## Code tag classes
-This code tag can have all the same classes as the inline block.
+This code tag can have all the same classes as the [inline code block](https://github.com/labelle/evo-code-inline).
 
 >No class on the code tag fullscreen
 
@@ -130,7 +130,7 @@ This code tag can have all the same classes as the inline block.
 > Contains an example of an html section wrapped with the identifer needed.
 
 #### codeblock.js
-> Conatins the javascript needed to put the code into the codeblock on page load.
+> Contains the javascript needed to put the code into the codeblock on page load.
 
 #### codeblock-style.css
 > Contains the styles used
