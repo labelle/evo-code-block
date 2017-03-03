@@ -45,7 +45,7 @@ In the example below the identifier is set to "list".  The div is placed around 
 </div>
 <!-- End Example -->
 ````
-Then the codeblock with a data-target to match the identifier will show the HTML.  A div with a pre tag and then code tage inside to format the html.
+Then the codeblock with a data-target to match the identifier will show the HTML.  A div with a pre tag and then code tag inside to format the html.
 
 ````shell
 <!-- the identifier is matched by the class in the codeblock's target.  The position needs to stay the same.  After codeblock, before target -->
