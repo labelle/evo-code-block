@@ -22,7 +22,8 @@ Block that will show multiple lines of code. It looks for an identifier and then
 
     Because we are grabbing html right from the file, the code being shown does need some formatting considerations.  Specifically, **if the code is indented in the file then the indentation will be applied when showing in the box as well**.  In order to have the code tight to the left side of the codeblock the code itself will need to start out unindented in the file.
     
-    * Note on glitch
+* Note on glitch
+    
     If your code is not working (be sure to run in localhost), then try codeblock-alt.js as this does not include the ="" character removal and should function fine, since your page likely does not have special characters so the sript chooses not to process.
 
 ####Examples
